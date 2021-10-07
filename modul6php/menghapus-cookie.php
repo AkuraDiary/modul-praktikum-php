@@ -15,7 +15,8 @@
                 //menghapus cookie dengan masa berlaku 1 jam yang lalu setcookie('nama_cookie', '', time()-1*3600);
 
                 //mengapus cookie lama
-                setcookie("nama_cookie", "nilai_baru", time()-1*20);
+                //setcookie("nama_cookie", "nilai_baru", time()-1*20);
+                setcookie("nama_cookie", "", time()+1*20);//the real menghapus cookie
                 echo "cookie dihapus <br> refresh to see the effect";
 
                 /*echo "cookie baru : ";
