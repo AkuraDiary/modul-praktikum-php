@@ -10,5 +10,5 @@
             echo $_COOKIE["nama_cookie"];
         ?>
     </body>
-    <p>Tekan Refresh (F5)</p>
+    <p>tekan Refresh (F5)</p>
 </html>
