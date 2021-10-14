@@ -11,7 +11,8 @@
 		</style>
 	</head>
 	<body>
-		<h2>Form Login</h2>
+		<fieldset style="display: inline-block;">
+		<legend>Form Login</legend>
 		<form action="proses_login.php" method="post">
 			<table>
 				<tr>
@@ -35,5 +36,6 @@
 				</tr>
 			</table>
 		</form>
+		</fieldset>
 	</body>
 </html>
