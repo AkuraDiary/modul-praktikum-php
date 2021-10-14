@@ -8,7 +8,7 @@ include "../connect.php";
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <title>Data Dosen</title>
     </head>
     <body>
         <table border="1">
