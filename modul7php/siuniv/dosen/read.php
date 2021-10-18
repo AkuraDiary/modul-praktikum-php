@@ -17,7 +17,7 @@ include "../connect.php";
                 <th>No.</th>
                 <th>Nama Dosen</th>
                 <th>Telepon</th>
-                <th>Aksi</th>
+                <th colspan="2">Aksi</th>
             </tr>
             <?php
             if ($num>0) {
@@ -28,6 +28,7 @@ include "../connect.php";
                     echo "<td>" . $data["nama_dosen"] . "</td>";
                     echo "<td>" . $data["telp"] . "</td>";
                     echo "<td><a href='form-update.php?id_dosen=".$data['id_dosen']."'>Edit</a> | ";
+                    echo "<td><a href='delete.php?id_dosen=".$data['id_dosen']."' onclick='return confirm(\"Apakah Anda yakin ingin menghapus data?\")'>Hapus</a>";
                     echo "</tr>";
                     $no++;
                 }
