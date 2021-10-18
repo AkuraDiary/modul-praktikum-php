@@ -17,6 +17,7 @@ include "../connect.php";
                 <th>No.</th>
                 <th>Nama Dosen</th>
                 <th>Telepon</th>
+                <th>Aksi</th>
             </tr>
             <?php
             if ($num>0) {
@@ -26,6 +27,7 @@ include "../connect.php";
                     echo "<td>" . $no . "</td>";
                     echo "<td>" . $data["nama_dosen"] . "</td>";
                     echo "<td>" . $data["telp"] . "</td>";
+                    echo "<td><a href='form-update.php?id_dosen=".$data['id_dosen']."'>Edit</a> | ";
                     echo "</tr>";
                     $no++;
                 }
