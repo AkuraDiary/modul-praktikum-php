@@ -18,6 +18,7 @@ include "../connect.php";
                 <th>Nama Matakuliah</th>
                 <th>SKS</th>
                 <th>Semester</th>
+                <th>Aksi</th>
             </tr>
             <?php
             if ($num>0) {
@@ -28,6 +29,7 @@ include "../connect.php";
                     echo "<td>" . $data["nama_mk"] . "</td>";
                     echo "<td>" . $data["sks"] . "</td>";
                     echo "<td>" . $data["semester"] . "</td>";
+                    echo "<td><a href='form-update.php?id_mk=".$data['id_mk']."'>Edit</a> | ";
                     echo "</tr>";
                     $no++;
                 }
