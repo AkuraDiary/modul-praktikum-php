@@ -10,9 +10,9 @@
     $num = mysqli_affected_rows($connect);
 
     if ($num > 0) {
-        echo "Berhasil menambah data";
+        echo "Berhasil menambah data <br>";
     }else {
-        echo "Gagal menambah data";
+        echo "Gagal menambah data <br>";
         echo mysqli_error($connect, $query);
     }
 
