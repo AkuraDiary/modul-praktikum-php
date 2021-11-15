@@ -1,12 +1,9 @@
 <?php
 include "../connect.php";
-    $query = "SELECT id_mk, nama_mk, sks, semester, nama_dosen
-    FROM matakuliah 
-    LEFT JOIN dosen 
-    USING(id_dosen) 
-    ORDER BY id_mk";
+    $query = "SELECT id_mk, nama_mk, sks, semester, matakuliah.id_dosen FROM matakuliah LEFT JOIN dosen USING (id_dosen) ORDER BY id_mk";
+    
     //$query = "SELECT * FROM matakuliah";
-
+    
     $result = mysqli_query($connect, $query);
     $num = mysqli_num_rows($result);
 ?>
@@ -34,14 +31,13 @@ include "../connect.php";
                 $no = 1;
                 while ($data = mysqli_fetch_assoc($result)) {?>
                 <tr>
-                    <td><?php echo $no; ?></td>
+                    <<td><?php echo $no; ?></td>
                     <td><?php echo $data["id_mk"]; ?> </td>
                     <td><?php echo $data["nama_mk"]; ?></td>
                     <td><?php echo $data["sks"] ; ?></td>
                     <td><?php echo $data["semester"];?></td>
-                    <td><?php if($data['nama_dosen' != NULL]){echo $data['nama_dosen'];}else{echo "-";}?></td>
-                    <td><a href='form-update.php?id_mk="<?php echo $data['id_mk']; ?>"'>Edit</a> | 
-                    <td><a href="delete.php?id_mk=<?php echo $data['id_mk'];?>" onclick="return confirm('Apakah anda yakin ingin menhapus data?')" >Hapus</a>
+                    <!--<td><?php if($data['id_dosen' != NULL]){echo $data['nama_dosen'];}else{echo "-";}?></td>-->
+                    <td><a href='form-update.php?id_mk="<?php echo $data['id_mk']; ?>"'>Edit</a> | <a href="delete.php?id_mk=<?php echo $data['id_mk'];?>" onclick="return confirm('Apakah anda yakin ingin menhapus data?')" >Hapus</a></td>
                 </tr>";
                     <?php
                     $no++;
@@ -49,7 +45,7 @@ include "../connect.php";
                     ?>
                 <?php
             }else {
-                echo " <td colspan='7'> Tidak ada data</td>";
+                echo " <td colspan='6'> Tidak ada data</td>";
             }
             ?>
         </table>
