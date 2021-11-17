@@ -18,7 +18,7 @@ repository untuk modul php
 
 ![alt text]()
 
-☑️ menampilkan variable (latihan 5)
+☑️ latihan 5
 
 ![alt text]()
 
