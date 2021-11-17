@@ -24,7 +24,14 @@ repository untuk modul php
 
 
 ## Modul 2
-☑️
-☑️
-☑️
-☑️
+☑️ latihan 1
+☑️ latihan 2
+☑️ latihan 3
+☑️ latihan 4
+☑️ latihan 5
+☑️ latihan 6
+☑️ latihan 7
+☑️ latihan 8
+☑️ latihan 9
+☑️ latihan 10
+
