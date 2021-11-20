@@ -17,8 +17,4 @@
     
     echo "<br>";
     echo 'Aku sekolah di '.$sekolah;
-<<<<<<< HEAD
 ?>
-=======
-?>
->>>>>>> 92906d2d974b339cee52bc5a4db908ead60a073a
